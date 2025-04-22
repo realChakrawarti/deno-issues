@@ -12,6 +12,6 @@
     "db:generate": "deno -A --node-modules-dir npm:drizzle-kit generate",
     "db:migrate": "deno run -A ./migrate.ts",
     "studio": "deno -A --node-modules-dir npm:drizzle-kit studio",
-    "compile": "deno task clean && deno compile --allow-scripts --target x86_64-pc-windows-msvc --output ./release/bin.exe --allow-ffi main.ts"
+    "compile": "deno task clean && deno compile --allow-scripts --target x86_64-pc-windows-msvc --icon ./assets/icon.ico --output ./release/bin.exe --allow-ffi main.ts"
   }
 }
